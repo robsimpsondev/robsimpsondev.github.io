@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rjss.me</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      color: white;
+      font-family: "Lucida Console", "Courier New", monospace;
+      font-weight: 600;
+      font-size: large;
+    }
+    @media (orientation: portrait) {
+      * {
+        color: black;
+      }
+    }
+    picture {
+      display: grid;
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate( -50%, -50% );
+      width: 100%;
+      height: 100%;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:active {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 1em;
+      padding: 0;
+    }
+
+    .inline-icon {
+      display: inline;
+      max-height: 0.9rem;
+      max-width: 0.9rem;
+      margin-bottom: -0.1rem;
+    }
+
+    @media (orientation: landscape) {
+      .inline-icon {
+        filter: invert(100%);
+      }
+    }
+  </style>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div>
+  <section>
+    <picture>
+      <source media="(orientation: landscape)" srcset="assets/images/originals/PXL_20201107_073624367.jpg">
+      <source media="(orientation: portrait)"  srcset="assets/images/originals/PXL_20201017_093447918.PORTRAIT.jpg">
+      <img src="assets/images/originals/PXL_20201107_073624367.jpg" alt="Sun on the Scottish hills">
+    </picture>
+  </section>
+</div>
+<div class="overlay">
+  <ul>
+    <li>| &copy; 2021 Rob Simpson</li>
+    <li>| Software engineer</li>
+    <li>|</li>
+    <li>|</li>
+    <li>|</li>
+    <li>| <a href="https://twitter.com/rjss_me"><img src="assets/icons/twitter_512x512.png" alt="envelope icon" class="inline-icon"> Twitter</a></li>
+  </ul>
+</div>
+</body>
+</html>
