@@ -1,12 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    byebug (11.1.3)
     rmagick (4.2.1)
 
 PLATFORMS
   x86_64-darwin-19
 
 DEPENDENCIES
+  byebug
   rmagick
 
 BUNDLED WITH
