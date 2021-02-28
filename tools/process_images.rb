@@ -12,7 +12,7 @@ IMAGE_SOURCE_FORMATS = ["*.jpg"].freeze
 
 IMAGE_TARGET_DIR     = "#{SITE_DIR}/assets/images/processed"
 IMAGE_TARGET_FORMATS = ["jpg", "webp"].freeze
-IMAGE_TARGET_WIDTHS  = [2560, 1920, 1280].freeze # 4k (most monitors and high end tablets), 1080p (most high end smart phones), 720p (most smart phones); see https://screensiz.es/.
+IMAGE_TARGET_WIDTHS  = [2560, 1920, 1280, 960].freeze # 4k (most monitors and high end tablets), 1080p (most high end smart phones), 720p (most smart phones), smaller phones; image width should be a bit bigger than screen width; see https://screensiz.es/.
 
 IMAGE_TARGET_PARAMETERS = {
   "*.jpg"  => {},
